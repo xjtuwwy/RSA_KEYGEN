@@ -1,0 +1,258 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\RSA.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\RSA.ico"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About RSA"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "RSA, Version 1.0",IDC_STATIC,42,9,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,42,21,114,8
+    DEFPUSHBUTTON   "OK",IDOK,118,46,50,14,WS_GROUP
+    LTEXT           "Author: xjtuwwy_2001@aliyun.com",IDC_STATIC,42,34,116,8
+END
+
+IDD_RSA_DIALOG DIALOGEX 0, 0, 465, 310
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "RSA"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Save Key to File",IDC_BUTTON_RUN,346,66,95,18
+    PUSHBUTTON      "Gen big P,Q",IDC_BUTTON_GENPQ,346,10,96,18
+    PUSHBUTTON      "Gen KeyPair",IDC_BUTTON_GENKEYPAIR,346,48,96,18
+    PUSHBUTTON      "Encrypt Message",IDC_BUTTON_ENCRYPTMESSAGE,346,85,95,18
+    PUSHBUTTON      "Decrypt Cypher",IDC_BUTTON_DECRYPTECYPHER,345,104,97,18
+    EDITTEXT        IDC_EDIT_PDATA,5,19,162,65,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_EDIT_QDATA,5,86,162,67,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_EDIT_NDATA,5,171,162,52,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_EDATA,5,227,162,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DDATA,5,246,162,52,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_DPDATA,171,20,162,42,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_DQDATA,171,63,162,42,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_QINVDATA,171,105,162,42,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    LTEXT           "Input plaintext message here:",IDC_STATIC_PGGEN5,174,152,98,8
+    EDITTEXT        IDC_EDIT_MESSAGE,172,161,162,34,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "Encrypt plaintext to here:",IDC_STATIC_PGGEN6,174,196,84,8
+    EDITTEXT        IDC_EDIT_ENCRYPTEMESSAGE,172,206,162,49,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "Decrypt ciphertext to here:",IDC_STATIC_PGGEN7,175,256,89,8
+    EDITTEXT        IDC_EDIT_DECRYPTEMESSAGE,172,265,162,35,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "All data is Big Endian mode",IDC_STATIC_PGGEN8,8,2,143,8
+    GROUPBOX        "Generated P and Q:",IDC_STATIC,3,10,166,146
+    GROUPBOX        "Generated dP,dQ,qInv:",IDC_STATIC,170,10,165,140
+    GROUPBOX        "Generated RSA Key Pairs(n ,e,d):",IDC_STATIC,3,159,166,142
+    CONTROL         "Type1 PrivKey",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,340,280,58,13
+    CONTROL         "Type2 PrivKey",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,340,291,62,10
+    GROUPBOX        "Decrypt key",IDC_STATIC,337,272,62,30
+    GROUPBOX        "P,Q method",IDC_STATIC,337,212,61,30
+    CONTROL         "Random Gen",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,340,221,52,10
+    CONTROL         "Manual input",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,340,231,52,10
+    GROUPBOX        "n bit size",IDC_STATIC,338,121,117,91
+    CONTROL         "n-64bit,pq-32bit",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | WS_GROUP,340,130,68,10
+    CONTROL         "n-128bit,pq-64bit",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,340,141,72,10
+    CONTROL         "n-256bit,pq-128bit",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,340,153,76,10
+    CONTROL         "n-512bit,pq-256bit",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,340,164,76,10
+    CONTROL         "n-1024bit,pq-512bit",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,340,176,80,10
+    CONTROL         "n-2048bit,pq-1024bit",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,340,187,82,10
+    CONTROL         "n-3072bit,pq-1536bit",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON,340,198,81,10
+    GROUPBOX        "e method",IDC_STATIC,337,241,62,31
+    CONTROL         "Random Gen",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON | WS_GROUP,340,251,52,10
+    CONTROL         "Manual input",IDC_RADIO13,"Button",BS_AUTORADIOBUTTON,340,260,52,10
+    PUSHBUTTON      "Gen e",IDC_BUTTON1,346,29,95,18
+    GROUPBOX        "Encrypt KeySel",IDC_STATIC,401,212,59,30
+    CONTROL         "Public Key",IDC_RADIO_PUBLIC_KEY,"Button",BS_AUTORADIOBUTTON | WS_GROUP,407,222,48,10
+    CONTROL         "Private Key",IDC_RADIO_PRIVATE_KEY,"Button",BS_AUTORADIOBUTTON,407,232,48,10
+    GROUPBOX        "Decrypt KeySel",IDC_STATIC,401,243,59,37
+    CONTROL         "Private Key",IDC_RADIO_DE_PRIVATE_KEY,"Button",BS_AUTORADIOBUTTON | WS_GROUP,407,254,49,10
+    CONTROL         "Public Key",IDC_RADIO_DE_PUBLIC_KEY,"Button",BS_AUTORADIOBUTTON,407,264,48,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "RSA.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "RSA.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 168
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_RSA_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 462
+        BOTTOMMARGIN, 308
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About RSA..."
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\RSA.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
